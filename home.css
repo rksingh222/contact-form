@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family:'Quicksand',sans-serif;
 }
 
 
@@ -11,14 +12,14 @@ body{
     background: url('bg.jpg') center no-repeat;
     background-size: cover;
 }
-ul {
+.navigation ul {
     list-style: none;
 }
-li{
+.navigation ul li{
     padding: 10px 10px;
     display: inline-block;
 }
-a{
+.navigation ul li a{
     text-decoration: none;
     padding: 10px 10px;
     font-size: 1.5rem;
@@ -27,11 +28,11 @@ a{
     background-color: transparent;
     transition: 0.3s;
 }
-a:hover{
+.navigation ul li a:hover{
     background-color: #fff;
     color: #000;
 }
-li.active a{
+.mavigation ul li.active a{
     background-color: #fff;
     color: #000;
 }
@@ -116,6 +117,79 @@ li.active a{
     transform: rotate(135deg);
 }
 
+
+footer{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    background-color: #111;
+    color: #fff;
+    padding-top: 40px;
+    height: auto;
+    width: 100vw;
+}
+
+footer .footer-content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+footer .footer-content h3{
+    font-size: 1.8rem;
+    line-height: 3rem;
+    text-transform: capitalize;
+    font-weight: 400;
+}
+
+footer .footer-content .socials{
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 1rem 0 3rem 0;
+}
+
+footer .footer-content .socials li{
+    margin: 0 10px;
+}
+
+footer .footer-content .socials li a{
+    text-decoration: none;
+    color: #fff;
+}
+
+footer .footer-content .socials li a i{
+    font-size: 1.1rem;
+    transition: color 0.4s ease;
+}
+
+footer .footer-content .socials li a:hover i{
+    color: aqua;
+}
+
+footer .footer-bottom{
+    background-color: #000;
+    padding: 20px 0;
+    text-align: center;
+    width: 100vw;
+}
+
+footer .footer-bottom p{
+    font-size: 14px;
+    word-spacing: 2px;
+    text-transform: capitalize;
+}
+
+footer .footer-bottom span{
+    opacity: .4;
+    text-transform: uppercase;
+}
+
+
 @media screen and (max-width: 991px) {
     .nav-toggler{
         display: block;
@@ -133,20 +207,19 @@ li.active a{
     .navigation.open{
         visibility: visible;
     }
-    
-    ul{
+    .navigation ul{
         width: 100%;
         border-top:  1px solid rgba(0, 0, 0, 0.8);
     }
-    li{
+    .navigation ul li{
         padding: 0;
         display: block;
     }
-    a{ 
+    .navigation ul li a{ 
         display: block;
         text-align: center;
     }
-    a:hover{
+    .navigation ul li a:hover{
         color: #000;
         background-color: transparent;
     }

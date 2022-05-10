@@ -10,6 +10,8 @@ function navToggle(){
     }
     else{
         navigation.removeAttribute("style");
-    }
+    } 
 
 }
+
+
